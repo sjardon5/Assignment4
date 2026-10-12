@@ -1,0 +1,16 @@
+body {
+    color:steelblue;
+    font-size: 100%;
+    padding: 0.5em;
+    width: 700px;
+    height: auto;
+    border: 5px steelblue;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+* {
+	margin: 0;
+	padding:0.6em;
+	box-sizing: border-box;
+    
+}
