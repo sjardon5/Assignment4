@@ -1,55 +1,67 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0.5em;
-    width: 700px;
-    height: auto%;
-    margin-left: 30%;
-    margin-right: 10%;
-    border: 3px solid steelblue;
-    border-radius: 1px;
-    box-shadow: 3px 3px 6px 3px rgba(1.9, 1.9, 1.9, 1.9);
-
-}
+/* Reset + box-sizing */
 * {
-	margin: 0;
-	padding:0.3em;
-	
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+  max-width: 700px;      /* keep your intended content width */
+  margin: 1em auto;      /* center the body container */
+  border: 3px solid steelblue;
+  border-radius: 1px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.35); /* fixed syntax */
+  background: white;
 }
 
 header {
-border: 2px solid steelblue;
-background-image: linear-gradient(to bottom, white 37%, lightsteelblue 63%);
-box-sizing: border-box;
-color: steelblue;
-height: 16%;
-text-align: center;
-p{ color: black;}
+  border: 2px solid steelblue;
+  background-image: linear-gradient(to bottom, white 37%, lightsteelblue 63%);
+  color: steelblue;
+  text-align: center;
+  padding: 0.6em;
+  overflow: auto; /* contains the floated image */
 }
 
-img{
-    float: left;
+header p { color: black; }
+
+img {
+  float: left;
+  margin-right: 0.6em;
+  max-width: 30%;
+  height: auto;
 }
 
-    a:visited{
-        color: maroon;
-    }
-    a:link{
-        color: maroon;
-    }
-    p{
-    color: black;
+a:link,
+a:visited {
+  color: maroon;
 }
+
+p {
+  color: black;
+  margin: 0.5em 0;
+}
+
 footer {
-    text-align: center;
-    background-color: steelblue;
-    color: white;
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+  clear: both;             /* sit below any floats */
+  width: 100%;
+  padding: 0.6em;
 }
-    ul{ 
-    font-style: normal;
-    border: 2px solid steelblue;
-    border-radius: 11px 11px 11px 11px;
-    list-style-position: inside;   
+
+ul {
+  font-style: normal;
+  border: 2px solid steelblue;
+  border-radius: 11px;
+  list-style-position: inside;
+  padding: 0.6em;
+  margin: 0.6em 0;
 }
+
 .box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
